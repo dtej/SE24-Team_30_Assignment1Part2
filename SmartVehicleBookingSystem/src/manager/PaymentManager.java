@@ -1,37 +1,12 @@
 package manager;
 
 import SmartVehicleBookingSystem.src.dbobjects.User;
-import SmartVehicleBookingSystem.src.dbobjects.PaymentDetails;
+import SmartVehicleBookingSystem.src.dbobjects.Payment;
 
 public class PaymentManager {
-    
-    private String paymentID;                         // unique ID for each payment
-    private PaymentDetails paymentDetails;            // object containing the details of the payment
 
     // default constructor for PaymentManager class
     PaymentManager() {
-
-    }
-
-    /* getter and setter methods of the class */
-
-    // set paymentID of the payment
-    public void setPaymentID(String paymentID) {
-        this.paymentID = paymentID;
-    }
-
-    // get paymentID
-    public String getPaymentID() {
-
-    }
-
-    // set the transaction details
-    public void setTransaction(String paymentID, PaymentDetails paymentDetails) {
-
-    }
-
-    // get the transaction details
-    public PaymentDetails getTransaction(String paymentID) {
 
     }
 
@@ -48,12 +23,12 @@ public class PaymentManager {
     }
 
     // process the payment for the trip / adding money to wallet
-    public TransactionState processPayment(String paymentID, Double amount) {
+    public Payment.TransactionState processPayment(String paymentId, Double amount) {
         
     }
 
     // store the transaction to db
-    public void storeToDB(String paymentID, PaymentDetails paymentDetails) {
+    public void storeToDB(String paymentId, Payment payment) {
 
     }
 }
