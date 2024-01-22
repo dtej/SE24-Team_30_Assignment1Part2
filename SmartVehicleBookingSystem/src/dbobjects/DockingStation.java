@@ -3,58 +3,56 @@ package dbobjects;
 import java.time.LocalDateTime;
 import java.util.List;
 
+//Each docking station contains some 'n' parking slots.
+//Each slot will have one vehicle or is an empty slot.
 
 public class DockingStation {
-// Docking station will have some functionalities. Those are mentioned here.
-	
-	String dockStationID;
-	List<String> availableVehicles;
-	int totalCapacity;
+
+	String dockingStationID;
+	List<SmartVehicle> availableVehicles;
+	List<ParkingSlot> parkingSlots;
+	int dockingStationCapacity;
 	String dockStationLocation;
-	LocalDateTime vehicleAssignTime;
-	LocalDateTime vehicleReturnTime;
-	
-// At any point in time it is assumed that either the DockingStationID or DockingStationLocation
-	//is always known.
-String getDockingStationID(String dockStationLocation)
-	{
-		String ID = "";
-	    return ID;	
+
+	public String getDockingStationID() {
+		return dockingStationID;
 	}
 
-String getDockingStationLocation(String dokcStationID)
-{
-	String location = "";
-    return location;	
-}
+	public void setDockingStationID(String dockingStationID) {
+		this.dockingStationID = dockingStationID;
+	}
 
-boolean setDockingStationID(String dockStatoinID)
-{
-	return true;
-}
+	public List<SmartVehicle> getAvailableVehicles() {
+		//returns the List of available vehicles in each docking station.
+		return availableVehicles;
+	}
 
-int monitorCapacity(String dockingStaionID)
-{
-	int count =0;
-	return count;
-}
+	public void setAvailableVehicles(List<SmartVehicle> availableVehicles) {
+		this.availableVehicles = availableVehicles;
+	}
 
-List<String> getParkingSlotsList(String dockingStationID)
-{
-	List slots = null;
-	
-	return slots;
-}
+	public List<ParkingSlot> getParkingSlots() {
+		return parkingSlots;
+	}
 
-boolean assignVehicle(String vID, String UID, String parkingSlotID, String dockStationID, LocalDateTime vehicleAssignTime)
-{
-	return true;
-}
+	public void setParkingSlots(List<ParkingSlot> parkingSlots) {
+		this.parkingSlots = parkingSlots;
+	}
 
-boolean unassignVehicle(String vID, String UID, String parkingSlotID, String dockStationID, LocalDateTime vehicleReturnTime)
-{
-	return true;
-}
+	public int getDockingStationCapacity() {
+		return dockingStationCapacity;
+	}
 
+	public void setDockingStationCapacity(int dockingStationCapacity) {
+		this.dockingStationCapacity = dockingStationCapacity;
+	}
+
+	public String getDockStationLocation() {
+		return dockStationLocation;
+	}
+
+	public void setDockStationLocation(String dockStationLocation) {
+		this.dockStationLocation = dockStationLocation;
+	}
 
 }
