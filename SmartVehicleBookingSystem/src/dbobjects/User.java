@@ -1,14 +1,12 @@
 package dbobjects;
 
-
 import java.util.List;
 
 public class User {
-    private UserIdentity id;
-    private Wallet wallet;
-    private List<Trip> tripHistory;
-    private Payment payment;
-
+	private UserIdentity id;
+	private Wallet wallet;
+	private List<Trip> tripHistory;
+	private List<Payment> payment;
 
 	public UserIdentity getId() {
 		return id;
@@ -34,12 +32,12 @@ public class User {
 		this.tripHistory = tripHistory;
 	}
 
-
-	public Payment getPayment() {
+	public List<Payment> getPayment() {
 		return payment;
 	}
 
-	public void setPayment(Payment payment) {
+	public void setPayment(List<Payment> payment) {
 		this.payment = payment;
 	}
+
 }
