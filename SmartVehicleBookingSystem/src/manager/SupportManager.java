@@ -4,6 +4,7 @@ import java.io.File;
 import java.util.List;
 
 import dbobjects.Ticket;
+import dbobjects.User;
 
 public class SupportManager {
 
@@ -18,7 +19,7 @@ public class SupportManager {
 	}
 
 	// For creating a new ticket
-	String createTicket(Ticket ticket) {
+	String createTicket(Ticket ticket, User user) {
 		// To Do
 		return null;
 	}

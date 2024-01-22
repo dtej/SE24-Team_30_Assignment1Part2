@@ -1,4 +1,6 @@
-package SmartVehicleBookingSystem.src.dbobjects;
+package dbobjects;
+
+
 
 
 import java.util.Date;

@@ -1,6 +1,6 @@
 package dbobjects;
 
-import SmartVehicleBookingSystem.src.dbobjects.VehicleStatus;
+
 
 import java.util.Date;
 

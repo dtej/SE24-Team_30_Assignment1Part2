@@ -1,10 +1,13 @@
-package SmartVehicleBookingSystem.src.manager;
+package manager;
 
-import SmartVehicleBookingSystem.src.dbobjects.Location;
-import SmartVehicleBookingSystem.src.dbobjects.VehicleStatus;
+
+
 
 import java.util.ArrayList;
 import java.util.List;
+
+import dbobjects.Location;
+import dbobjects.VehicleStatus;
 
 public class VehicleManager {
 

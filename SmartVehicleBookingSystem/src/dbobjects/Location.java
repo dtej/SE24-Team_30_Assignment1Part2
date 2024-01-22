@@ -1,4 +1,6 @@
-package SmartVehicleBookingSystem.src.dbobjects;
+package dbobjects;
+
+
 
 /*
 * A placeholder for location details, currently x and y are representatives

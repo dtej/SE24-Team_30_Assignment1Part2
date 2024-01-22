@@ -1,4 +1,6 @@
-package SmartVehicleBookingSystem.src.proxy;
+package proxy;
+
+
 
 public class VehicleDBProxy {
 
