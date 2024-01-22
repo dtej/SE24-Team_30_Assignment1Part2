@@ -1,6 +1,6 @@
-package SmartVehicleBookingSystem.src.proxy;
+package proxy;
 
-import SmartVehicleBookingSystem.src.dbobjects.UserIdentity;
+import dbobjects.UserIdentity;
 
 public class UserDBProxy {
 

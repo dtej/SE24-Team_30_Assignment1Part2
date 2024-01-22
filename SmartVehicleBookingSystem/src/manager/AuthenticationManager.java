@@ -1,6 +1,6 @@
 package manager;
 
-import SmartVehicleBookingSystem.src.iface.Authenticator;
+import iface.Authenticator;
 
 public class AuthenticationManager {
     private Authenticator authenticator;

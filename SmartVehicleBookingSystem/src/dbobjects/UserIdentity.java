@@ -1,45 +1,46 @@
-package SmartVehicleBookingSystem.src.dbobjects;
-enum UserType{
-    STUDENT,
-    FACULTY,
-    STAFF
-}
+package dbobjects;
+
 public class UserIdentity {
-    private String name;
-    private String phone;
+	private String name;
+	private String phoneNumber;
+	private String emailId;
 
-    private String encrypt_password;
-    private UserType type;
+	private String encryptPassword;
 
-    public String getName() {
-        return name;
-    }
+	public enum UserType {
+		STUDENT, FACULTY, STAFF
+	}
 
-    public void setName(String name) {
-        this.name = name;
-    }
+	public String getName() {
+		return name;
+	}
 
-    public String getPhone() {
-        return phone;
-    }
+	public void setName(String name) {
+		this.name = name;
+	}
 
-    public void setPhone(String phone) {
-        this.phone = phone;
-    }
+	public String getPhoneNumber() {
+		return phoneNumber;
+	}
 
-    public String getEncrypt_password() {
-        return encrypt_password;
-    }
+	public void setPhoneNumber(String phoneNumber) {
+		this.phoneNumber = phoneNumber;
+	}
 
-    public void setEncrypt_password(String encrypt_password) {
-        this.encrypt_password = encrypt_password;
-    }
+	public String getEmailId() {
+		return emailId;
+	}
 
-    public UserType getType() {
-        return type;
-    }
+	public void setEmailId(String emailId) {
+		this.emailId = emailId;
+	}
 
-    public void setType(UserType type) {
-        this.type = type;
-    }
+	public String getEncryptPassword() {
+		return encryptPassword;
+	}
+
+	public void setEncryptPassword(String encryptPassword) {
+		this.encryptPassword = encryptPassword;
+	}
+
 }

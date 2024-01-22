@@ -1,14 +1,13 @@
-package SmartVehicleBookingSystem.src.manager;
+package manager;
 
-import SmartVehicleBookingSystem.src.proxy.UserDBProxy;
-import SmartVehicleBookingSystem.src.dbobjects.User;
+import proxy.UserDBProxy;
+
 public class UserAccountManager {
 
     private UserDBProxy userDB;
     public void modifyUser(dbobjects.User user ){}
     public void deleteUser(dbobjects.User user){}
-
-    public void createUser(String email, String phone, String encrypt_pass){ }
+    public void createUser(String email, String phone, String encryptPassword){ }
 
 }
 

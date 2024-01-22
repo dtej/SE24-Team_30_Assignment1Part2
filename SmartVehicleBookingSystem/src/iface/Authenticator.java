@@ -1,9 +1,7 @@
-package SmartVehicleBookingSystem.src.iface;
+package iface;
 
-import SmartVehicleBookingSystem.src.dbobjects.UserIdentity;
-
+import dbobjects.UserIdentity;
 
 public interface Authenticator {
-       public AuthResponse authenticate(UserIdentity id);
+	public AuthResponse authenticate(UserIdentity id);
 }
-

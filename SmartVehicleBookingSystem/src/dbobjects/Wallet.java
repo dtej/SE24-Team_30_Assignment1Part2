@@ -1,4 +1,5 @@
-package SmartVehicleBookingSystem.src.dbobjects;
+package dbobjects;
+
 
 public class Wallet {
 

@@ -1,4 +1,4 @@
-package SmartVehicleBookingSystem.src.iface;
+package iface;
 
 public enum AuthResponse {
     SUCCESS,

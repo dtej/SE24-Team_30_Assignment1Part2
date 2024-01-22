@@ -1,8 +1,8 @@
 package proxy;
 
-import SmartVehicleBookingSystem.src.dbobjects.UserIdentity;
-import SmartVehicleBookingSystem.src.iface.AuthResponse;
-import SmartVehicleBookingSystem.src.iface.Authenticator;
+import dbobjects.UserIdentity;
+import iface.AuthResponse;
+import iface.Authenticator;
 
 public class AuthenticationProxy implements Authenticator {
 

@@ -1,5 +1,6 @@
 package dbobjects;
 
+
 import SmartVehicleBookingSystem.src.dbobjects.Trip;
 import SmartVehicleBookingSystem.src.dbobjects.UserIdentity;
 import SmartVehicleBookingSystem.src.dbobjects.Wallet;
@@ -11,36 +12,45 @@ public class User {
     private Wallet wallet;
     private List<Trip> tripHistory;
     private Payment payment;
+=======
+import java.util.List;
 
-    public UserIdentity getId() {
-        return id;
-    }
+public class User {
+	private UserIdentity id;
+	private Wallet wallet;
+	private List<Trip> tripHistory;
+	private PaymentDetails payment;
 
-    public void setId(UserIdentity id) {
-        this.id = id;
-    }
+	public UserIdentity getId() {
+		return id;
+	}
 
-    public Wallet getWallet() {
-        return wallet;
-    }
+	public void setId(UserIdentity id) {
+		this.id = id;
+	}
 
-    public void setWallet(Wallet wallet) {
-        this.wallet = wallet;
-    }
+	public Wallet getWallet() {
+		return wallet;
+	}
 
-    public List<Trip> getTripHistory() {
-        return tripHistory;
-    }
+	public void setWallet(Wallet wallet) {
+		this.wallet = wallet;
+	}
 
-    public void setTripHistory(List<Trip> tripHistory) {
-        this.tripHistory = tripHistory;
-    }
+	public List<Trip> getTripHistory() {
+		return tripHistory;
+	}
 
-    public Payment getPayment() {
-        return payment;
-    }
+	public void setTripHistory(List<Trip> tripHistory) {
+		this.tripHistory = tripHistory;
+	}
 
-    public void setPayment(Payment payment) {
-        this.payment = payment;
-    }
+
+	public PaymentDetails getPayment() {
+		return payment;
+	}
+
+	public void setPayment(PaymentDetails payment) {
+		this.payment = payment;
+	}
 }
