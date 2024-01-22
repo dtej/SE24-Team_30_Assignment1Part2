@@ -1,5 +1,7 @@
 package manager;
 
-public class AuthenticationManager {
+import SmartVehicleBookingSystem.src.iface.Authenticator;
 
+public class AuthenticationManager {
+    private Authenticator authenticator;
 }
