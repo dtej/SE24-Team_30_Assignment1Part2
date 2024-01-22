@@ -16,22 +16,33 @@ enum PaymentMode {
     PAYLATER
 }
 
-public class PaymentDetails {
+public class Payment {
 
-    private LocalDateTime dateTime;
-    private User user;
-    private Double amount;
-    private String senderBankAccount;
-    private String receiverBankAccount;
-    private PaymentMode paymentMode;
-    private TransactionState paymentStatus;
+    private String paymentId;                         // unique ID for each payment
+    private LocalDateTime dateTime;                   // time and date of the payment
+    private User user;                                // user object who made the payment
+    private Double amount;                            // payemnt amount
+    private String senderBankAccount;                 // sender's bank account name
+    private String receiverBankAccount;               // receiver's bank account name
+    private PaymentMode paymentMode;                  // mode of payment (UPI, WALLET or PAYLATER)
+    private TransactionState paymentStatus;           // status of the payment (SUCCESS, PROCESSING or FAILED)
 
-    // default constructor for PaymentDetails class
-    PaymentDetails() {
+    // default constructor for Payment class
+    Payment() {
 
     }
 
     /* getter and setter methods of the class */    
+
+    // set paymentId of the payment
+    public void setPaymentId(String paymentId) {
+        this.paymentId = paymentId;
+    }
+
+    // get paymentId
+    public String getPaymentId() {
+        return null;
+    }
 
     // set the date and time of the payment
     public void setDateTime(LocalDateTime dateTime) {
@@ -104,9 +115,4 @@ public class PaymentDetails {
     }
 
     /* additional methods of the class */
-
-    // method to update transaction
-    public void updateTransaction() {
-
-    }
 }
