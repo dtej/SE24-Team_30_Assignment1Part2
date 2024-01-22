@@ -3,14 +3,14 @@ package dbobjects;
 import SmartVehicleBookingSystem.src.dbobjects.Trip;
 import SmartVehicleBookingSystem.src.dbobjects.UserIdentity;
 import SmartVehicleBookingSystem.src.dbobjects.Wallet;
-import SmartVehicleBookingSystem.src.dbobjects.Payment;
+import SmartVehicleBookingSystem.src.dbobjects.PaymentDetails;
 import java.util.List;
 
 public class User {
     private UserIdentity id;
     private Wallet wallet;
     private List<Trip> tripHistory;
-    private Payment payment;
+    private PaymentDetails payment;
 
     public UserIdentity getId() {
         return id;
@@ -36,11 +36,11 @@ public class User {
         this.tripHistory = tripHistory;
     }
 
-    public Payment getPayment() {
+    public PaymentDetails getPayment() {
         return payment;
     }
 
-    public void setPayment(Payment payment) {
+    public void setPayment(PaymentDetails payment) {
         this.payment = payment;
     }
 }
